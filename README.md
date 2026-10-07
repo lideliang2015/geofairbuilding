@@ -55,7 +55,7 @@ geofairbuilding/
 └── README.md
 
 
----
+```
 
 ## Installation
 
@@ -82,11 +82,11 @@ pip install -r requirements.txt
 ```
 
 ## Data Preparation
-
+```
 1.Download the original datasets from the links above.
 2.Organize them following the structure expected by data_preprocess/.
 3.Run the preprocessing scripts to generate the GeoFair-Building v1.0 test set.
-
+```
 ## Example:
 ```bash
 python data_preprocess/build_geofair.py
@@ -125,22 +125,17 @@ Geographical detector and MGWR are implemented in evaluate_fairness.py and can b
 ## Results
 Key findings from the manuscript:
 
-Spatial Fairness Ratio (SFR) = 0.579
-Best region: Oceania (IoU = 0.659)
-Worst region: South America (IoU = 0.382)
-Dominant driver: Training sample density (q = 0.683)
-GWL improves SFR to 0.641 with only 1.2 pp drop in global IoU
+- Spatial Fairness Ratio (SFR) = 0.579
+- Best region: Oceania (IoU = 0.659)
+- Worst region: South America (IoU = 0.382)
+- Dominant driver: Training sample density (q = 0.683)
+- GWL improves SFR to 0.641 with only 1.2 pp drop in global IoU
 
 ## Citation
-If you use this repository or the GeoFair-Building v1.0 benchmark, please cite:
 
-@article{li2026geofair,
-  title={The GeoFair Framework: A Spatially Explicit Multi-Scale Approach for Quantifying and Mitigating Geographic Unfairness in Building Extraction},
-  author={Li, Deliang and Liu, Tao and Li, Shuangtong and Fan, Rongsheng and Li, Pan},
-  journal={Transactions in GIS},
-  year={2026},
-  note={Under review}
-}
+If you use this repository or the GeoFair-Building v1.0 benchmark, please cite our manuscript (in preparation):
+
+Li, Deliang, Tao Liu, Shuangtong Li, Rongsheng Fan, and Pan Li. 2026. "The GeoFair Framework: A Spatially Explicit Multi-Scale Approach for Quantifying and Mitigating Geographic Unfairness in Building Extraction." Manuscript in preparation.
 
 ## License
 The code in this repository is released under the MIT License.
