@@ -100,19 +100,19 @@ python evaluate_fairness.py --pred_dir ./predictions --meta ./metadata.csv
 Outputs: SFR, SFI, Getis-Ord Gi* hotspots.
 
 ## Model Evaluation
-# SegFormer:
+- SegFormer:
 ```bash
 python evaluate_segformer.py
 ```
 
-# SAM (zero-shot):
+- SAM (zero-shot):
 
 ```bash
 
 python evaluate_sam.py
 ```
 
-# U-Net:
+- U-Net:
 
 ```bash
 
