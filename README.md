@@ -9,6 +9,8 @@ This repository accompanies the manuscript:
 
 
 ---
+markdown
+<img src="figures/fig_01.png" width="700">
 
 ## Overview
 
