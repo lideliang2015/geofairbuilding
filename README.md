@@ -40,6 +40,7 @@ Due to license restrictions, the integrated dataset is **not redistributed**. Re
 ---
 
 ## Repository Structure
+```
 geofairbuilding/
 ├── config.py # Configuration and paths
 ├── requirements.txt # Python dependencies
