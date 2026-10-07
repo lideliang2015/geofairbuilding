@@ -1,0 +1,39 @@
+============================================================
+GeoFair-Building v1.0 数据集划分
+============================================================
+
+[1/5] 读取元数据: E:\GeoFair-Building-v1.0\metadata.csv
+    总样本数: 960
+
+[2/5] 原始数据分布:
+  大洲分布:
+    Asia           240
+    Africa         200
+    Europe         160
+    North America  160
+    South America  120
+    Oceania         80
+
+[3/5] 执行分层抽样划分...
+    划分比例: 训练 70% / 验证 15% / 测试 15%
+    分层字段: continent
+
+[4/5] 保存划分结果...
+    已保存至: E:\GeoFair-Building-v1.0\splits.csv
+
+[5/5] 划分结果统计:
+  总体划分:
+    train: 672 (70.0%)
+    val: 144 (15.0%)
+    test: 144 (15.0%)
+
+  各大洲划分:
+    continent    train  val  test
+    Asia          168   36    36
+    Africa        140   30    30
+    Europe        112   24    24
+    North America 112   24    24
+    South America  84   18    18
+    Oceania        56   12    12
+
+✅ 数据划分完成！

@@ -1,0 +1,38 @@
+============================================================
+GeoFair-Building v1.0 统计报告
+============================================================
+
+总瓦片数: 960
+
+大洲分布:
+continent
+Asia             240
+Africa           200
+Europe           160
+North America    160
+South America    120
+Oceania           80
+
+HDI 等级分布:
+hdi_level
+developed         400
+developing        360
+underdeveloped    200
+
+数据源分布:
+source
+Inria               320
+WHU_Satellite_II    240
+SpaceNet_AOI5       200
+SpaceNet_RIO        120
+WHU_Aerial           80
+
+大洲 × HDI 交叉表:
+hdi_level      developed  developing  underdeveloped
+continent                                           
+Africa                 0           0             200
+Asia                   0         240               0
+Europe               160           0               0
+North America        160           0               0
+Oceania               80           0               0
+South America          0         120               0
