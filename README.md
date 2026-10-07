@@ -9,7 +9,6 @@ This repository accompanies the manuscript:
 
 
 ---
-html
 
 <img src="figures/fig_01.png" width="700">
 
