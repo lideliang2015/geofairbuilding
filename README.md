@@ -6,7 +6,7 @@ This repository accompanies the manuscript:
 
 > **The GeoFair Framework: A Spatially Explicit Multi-Scale Approach for Quantifying and Mitigating Geographic Unfairness in Building Extraction**  
 > Deliang Li, Tao Liu, Shuangtong Li, Rongsheng Fan, Pan Li  
-> *Manuscript submitted to Transactions in GIS* (under review)
+
 
 ---
 
