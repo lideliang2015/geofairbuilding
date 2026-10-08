@@ -1,0 +1,75 @@
+# GeoFair-Framework 实验配置文件
+# 路径: E:\geofair_experiments\config\experiment_config.yaml
+
+experiment:
+  name: "geo_fairness_full_pipeline"
+  seed: 42
+  device: "cuda"
+  num_gpus: 1
+
+# 数据配置
+data:
+  dataset_name: "GeoFair-Building-v1.0"
+  data_root: "E:/GeoFair-Building-v1.0"
+  image_size: 512
+  num_classes: 2
+  train_sources: ["WHU", "SpaceNet_US"]
+  test_sources: ["GeoFair_all"]
+
+# 地理层级配置
+geographic:
+  levels:
+    - name: "continent"
+      categories: ["Africa", "Asia", "Europe", "North America", "South America", "Oceania"]
+    - name: "hdi"
+      categories: ["Developed", "Developing", "Underdeveloped"]
+
+# 模型配置
+models:
+  segformer:
+    name: "nvidia/mit-b2"
+    pretrained: true
+  unet:
+    backbone: "resnet34"
+    pretrained: true
+  deeplabv3plus:
+    backbone: "resnet50"
+    pretrained: true
+
+# 训练配置
+training:
+  batch_size: 8
+  epochs: 100
+  learning_rate: 1e-4
+  optimizer: "adamw"
+  weight_decay: 1e-4
+  scheduler: "cosine"
+  early_stopping_patience: 10
+
+# 损失函数
+loss:
+  ce_weight: 0.5
+  dice_weight: 0.5
+
+# 数据增强
+augmentation:
+  random_flip: true
+  random_rotation: [0, 90, 180, 270]
+  random_scale: [0.8, 1.2]
+  color_jitter: 0.2
+
+# 公平性指标
+fairness:
+  sfi_w_I: 0.5
+  moran_threshold_km: 50
+  hotspot_p_value: 0.05
+  n_bootstrap: 1000
+
+# 优化策略
+mitigation:
+  gss_enabled: true
+  gwl_enabled: true
+  ada_enabled: true
+  gat_enabled: true
+  ada_alpha: 0.1
+  lambda_adv: 0.1
