@@ -44,17 +44,30 @@ Due to license restrictions, the integrated dataset is **not redistributed**. Re
 ## Repository Structure
 ```
 geofairbuilding/
-├── config.py # Configuration and paths
-├── requirements.txt # Python dependencies
-├── data_preprocess/ # Data preprocessing scripts
-├── dataset.py # Dataset loader
-├── debug_metadata.py # Metadata verification
-├── models.py # Model definitions
-├── evaluate_fairness.py # Fairness metrics (SFR, SFI, Gi*)
-├── evaluate_segformer.py # SegFormer evaluation
-├── evaluate_sam.py # SAM evaluation
-├── reevaluate_unet.py # U-Net re-evaluation
-└── README.md
+├── config/                  # Configuration files
+├── config.py                # Main configuration script
+├── data_preprocess/         # Data preprocessing scripts
+├── dataset.py               # Dataset loader
+├── debug_metadata.py        # Metadata verification
+├── diagnosis/               # Diagnostic analysis scripts (GD, MGWR)
+├── evaluate_fairness.py     # Fairness metrics (SFR, SFI, Gi*)
+├── evaluate_sam.py          # SAM evaluation
+├── evaluate_segformer.py    # SegFormer evaluation
+├── experiments/             # Experiment orchestration
+├── fairness/                # Fairness metric implementations
+├── figures/                 # Figures for README and paper
+├── HDI/                     # HDI-stratified data or results
+├── GeoFair-Building-v1.0/   # Benchmark data or reconstruction outputs
+├── mitigation/              # Mitigation strategies (GWL, GSS, etc.)
+├── models.py                # Model definitions
+├── README.md                # Project documentation
+├── reevaluate_unet.py       # U-Net re-evaluation
+├── requirements.txt         # Python dependencies
+├── run_all_experiments.py   # Run all experiments
+├── split_dataset.py         # Dataset splitting
+├── train_segformer.py       # SegFormer training
+├── train_unet.py            # U-Net training
+└── utils.py                 # Utility functions
 
 
 ```
