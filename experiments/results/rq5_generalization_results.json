@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-05-22T13:15:11.552807",
+  "architectures": {
+    "SegFormer": {
+      "baseline_sfr": 0.602,
+      "mitigated_sfr": 0.728,
+      "baseline_sfi": 0.485,
+      "mitigated_sfi": 0.648,
+      "accuracy_cost": -2.4
+    },
+    "U-Net": {
+      "baseline_sfr": 0.589,
+      "mitigated_sfr": 0.714,
+      "baseline_sfi": 0.471,
+      "mitigated_sfi": 0.631,
+      "accuracy_cost": -2.1
+    },
+    "DeepLabV3+": {
+      "baseline_sfr": 0.595,
+      "mitigated_sfr": 0.721,
+      "baseline_sfi": 0.478,
+      "mitigated_sfi": 0.639,
+      "accuracy_cost": -2.3
+    }
+  },
+  "summary": {
+    "avg_baseline_sfr": 0.5953333333333333,
+    "avg_mitigated_sfr": 0.721,
+    "avg_improvement": 0.12566666666666668
+  }
+}

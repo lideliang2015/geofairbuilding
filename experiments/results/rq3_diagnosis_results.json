@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-05-22T13:15:08.213988",
+  "geodetector_results": {
+    "terrain_roughness": {
+      "q": 0.01084550363774961,
+      "p_value": 0.2478692048462433
+    },
+    "shape_complexity": {
+      "q": 0.005730035540056244,
+      "p_value": 0.41482650790470643
+    },
+    "cloud_cover": {
+      "q": 0.003042407968497196,
+      "p_value": 0.82463249457271
+    },
+    "train_density": {
+      "q": -0.004123016941424584,
+      "p_value": 1.0
+    },
+    "building_density": {
+      "q": -0.004699804532968699,
+      "p_value": 1.0
+    }
+  },
+  "attribution": {
+    "terrain_roughness": 1.0046667326875993,
+    "shape_complexity": 0.5307984097828982,
+    "cloud_cover": 0.28183163966436375,
+    "train_density": -0.38193320455297497,
+    "building_density": -0.43536357758188615
+  }
+}

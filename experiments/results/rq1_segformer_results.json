@@ -1,0 +1,49 @@
+{
+  "experiment": "RQ1_Geographic_Unfairness",
+  "model": "SegFormer (MIT-B2)",
+  "timestamp": "2026-05-28T14:49:47.072765",
+  "regional_performance": {
+    "Africa": {
+      "iou": 0.5172,
+      "std": 0.2598,
+      "n_samples": 30
+    },
+    "Asia": {
+      "iou": 0.5055,
+      "std": 0.1553,
+      "n_samples": 36
+    },
+    "Europe": {
+      "iou": 0.6049,
+      "std": 0.244,
+      "n_samples": 24
+    },
+    "North America": {
+      "iou": 0.5389,
+      "std": 0.222,
+      "n_samples": 24
+    },
+    "Oceania": {
+      "iou": 0.6591,
+      "std": 0.1923,
+      "n_samples": 12
+    },
+    "South America": {
+      "iou": 0.3817,
+      "std": 0.138,
+      "n_samples": 18
+    }
+  },
+  "fairness_metrics": {
+    "sfr": 0.5792,
+    "min_iou": 0.3817,
+    "min_region": "South America",
+    "max_iou": 0.6591,
+    "max_region": "Oceania",
+    "gap": 0.2774
+  },
+  "global_metrics": {
+    "mean_iou": 0.5346,
+    "total_samples": 144
+  }
+}

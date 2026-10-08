@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-05-22T13:15:08.563481",
+  "experiments": {
+    "E1_Baseline": {
+      "sfr": 0.602,
+      "sfi": 0.485,
+      "global_iou": 74.2
+    },
+    "E2_GSS": {
+      "sfr": 0.651,
+      "sfi": 0.542,
+      "global_iou": 73.5
+    },
+    "E3_GWL": {
+      "sfr": 0.668,
+      "sfi": 0.561,
+      "global_iou": 73.1
+    },
+    "E4_ADA": {
+      "sfr": 0.642,
+      "sfi": 0.538,
+      "global_iou": 74.0
+    },
+    "E5_GAT": {
+      "sfr": 0.625,
+      "sfi": 0.507,
+      "global_iou": 74.4
+    },
+    "E6_Full": {
+      "sfr": 0.728,
+      "sfi": 0.648,
+      "global_iou": 71.8
+    }
+  },
+  "baseline_sfr": 0.602,
+  "best_improvement": {
+    "method": "E6_Full",
+    "sfr_gain": 0.126
+  }
+}
